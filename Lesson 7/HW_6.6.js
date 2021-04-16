@@ -86,6 +86,127 @@ function anyArrows(arrows){
 }
 //------------------------------------------------
 
+function largestPairSum(numbers)
+{
+  return numbers.sort((a,b)=>b-a).slice(0,2).reduce((a,b)=>a+b)
+}
+
+function sumTwoSmallestNumbers(numbers) {  
+    return numbers.sort((a,b)=>a-b).slice(0,2).reduce((a,b)=>a+b)
+  }
+
+  var min = function(list){
+    list.sort((a,b)=>a-b).slice(0)
+    return list[0];
+}
+
+var max = function(list){
+    list.sort((a,b)=>b-a).slice(0)
+    return list[0];
+}
+
+function sortByLength (array) {
+    return array.sort((a,b)=>a.length -b.length)
+  };
+
+  function solution(nums){
+    return nums == null || nums == [] ? [] : nums.sort((a,b)=>a-b)
+  }
+
+
+  function sumOfDifferences(arr) {
+    return arr.length <= 1 ? 0 : arr.sort((a,b)=>b-a)[0] - arr.sort((a,b)=>a-b)[0]
+  }
+
+
+  // Smash Words
+function smash (words) {
+   
+    return words.join(' ')
+      
+  };
+
+  function buildString(...template){
+    return `I like ${template.join(', ')}!`;
+  }
+
+  function printArray(array){
+    return array.join(',')
+  }
+
+  function toCsvText(array) {
+    return array.join('\n')
+ }
+
+ function array(arr){
+    return arr.split(",").slice(1,-1).join(" ") || null;
+  }
+
+  function withoutLast(arr) {
+    // Fix it
+     // removes the last element
+    
+    return arr.slice(0,-1)
+  }
+
+//-------------------------------------------------------------------
+
+function take(arr, n) {
+    return arr.slice(0,n)
+  }
+
+  function getAge(inputString){
+    // return correct age (int). Happy coding :) 
+      return +inputString.split('')[0]
+    }
+
+
+    function binToDec(bin){
+        let res = 0;
+        
+        bin.split('')
+        .map(a=>Number(a))
+        .forEach(function(el, ind, bin){
+        
+        res += el*Math.pow(2,bin.length-ind-1)
+        
+      });
+        return res;
+      }
+
+      function hexToDec(hexString){
+        //your code here
+        return parseInt(hexString, 16);
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
